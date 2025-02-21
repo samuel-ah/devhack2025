@@ -9,7 +9,7 @@
    - Adjustable text size
 
 Functions
-1. A home page
+A home page
    - 
 1. Arrow buttons to go left and right
 2. Add button to add a new flashcard
