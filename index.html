@@ -7,7 +7,17 @@
 
     <body>
         <script src="/scripts/home.js"></script>
+        <header>
+            <a href="/index.html"><h1>Flash card app</h1></a>
+        </header>
 
-        <h1>Main page</h1>
+        <main>
+            <!-- Create deck button  -->
+            <button id="deck-create-button" onclick="goToCreate()">Create deck</button>
+            <!-- Edit deck button -->
+            <button id="deck-edit-button" onclick="goToEdit()">Edit deck</button>
+            <!-- Test button --> 
+            <button id="test-button" onclick="goToTest()">Test yourself</button>
+        </main>
     </body>
 </html>
