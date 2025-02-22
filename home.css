@@ -1,0 +1,100 @@
+body {
+    font-family: "Felix Titling", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(149, 142, 145);
+    font-weight: bold;
+}
+
+p {
+    font-size: 600%; /* 150% of the default size */
+    color: white;
+}
+
+.open {
+    background: none; /* Remove background */
+    border: none; /* Remove button border */
+    padding: 0; /* Remove extra spacing */
+    cursor: pointer; /* Indicate it's clickable */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.open:hover{
+    background-color: rgb(114, 114, 110);
+}
+
+
+.angled-image {
+    position: absolute;
+    top: 295px; /* Adjust vertically */
+    right: 570px;
+    z-index: -1; /* Send it behind the text */
+    transform: rotate(-15deg); /* Rotate the image */
+    opacity: 0.7; /* Optional: Make it slightly transparent */
+}
+
+/* Sidebar styling */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Sidebar starts hidden off-screen */
+    width: 250px; /* Make the sidebar more rectangular */
+    height: 100%; /* Full height */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    transition: left 0.3s ease; /* Smooth slide-in transition */
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5); /* Optional: Shadow for a more defined look */
+}
+
+/* When the sidebar is open, it slides in */
+#sidebar.open {
+    left: 0; /* Sidebar comes in from the left */
+}
+
+/* Close button inside the sidebar */
+#sidebar button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3f3a3a; /* Red close button */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: Rounded corners for close button */
+}
+
+/* Sidebar content */
+#sidebar p {
+    font-size: 50px;
+    margin-top: 60px; /* Adjust to prevent overlap with close button */
+}
+
+#sidebar button:hover{
+    background-color: rgb(210, 213, 215);
+}
+
+/* Styling for the directory links */
+.sidebar-links {
+    margin-top: 50px; /* Space between close button and links */
+}
+
+.sidebar-links a {
+    display: block; /* Make links stack vertically */
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 15px; /* Space between links */
+    transition: background-color 0.3s; /* Smooth background change on hover */
+}
+
+.sidebar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Add background on hover */
+}

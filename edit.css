@@ -33,9 +33,10 @@ body {
     /* Darker blue on hover */
 }
 
+
 .editContainer {
     display: flex;
-    gap: 10px;
+    gap: 10px; 
     align-items: flex-start;
     padding: 20px;
 }
@@ -92,16 +93,13 @@ body {
 }
 
 .saved-box:hover {
-    background-color: #e3e2e2;
-    /* Change background color of the rectangle itself */
+    background-color: #e3e2e2; /* Change background color of the rectangle itself */
 }
 
 
 .saved-box-name {
-    margin-top: 15px;
-    /* Adds space between the box and the name */
-    font-size: 14px;
-    /* Adjust font size of the name if needed */
+    margin-top: 15px; /* Adds space between the box and the name */
+    font-size: 14px; /* Adjust font size of the name if needed */
 }
 
 .dotted-rectangle button {
@@ -118,20 +116,14 @@ body {
 }
 
 .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black with opacity */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
 }
 
 .modal-content {
@@ -161,12 +153,20 @@ body {
 #userForm button {
     margin-top: 20px;
     /* Move the button further down */
+    top: 10px;   /* Position from the top */
+    left: 15px;
+    cursor: pointer;
+}
+.close:hover{
+    color: white; /* Change text color to white*/
+}
+
+#userForm button{
+    margin-top: 20px; /* Move the button further down */
     cursor: pointer;
 }
 
 #userForm button:hover {
-    background-color: #363936;
-    /* Change background color on hover */
-    color: white;
-    /* Change text color to white */
+    background-color: #363936; /* Change background color on hover */
+    color: white; /* Change text color to white */
 }
