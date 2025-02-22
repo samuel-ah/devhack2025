@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Declares the document as HTML5 -->
+<html lang="en"> <!-- Defines the language as English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Uses UTF-8 encoding for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title> <!-- Sets the browser tab title -->
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="Title">
+        <p>Memofiy</p>
+        <img src="images/flashme.png" class="angled-image" width="50" height="40" />
+        <button class="open" onclick="openMenu()">
+            <img src="images/open.png"  width="30" height="30"/>
+        </button> 
+    </div>
+    <div id="sidebar">
+        <button onclick="openMenu()">x</button>
+        <div class="sidebar-links">
+            <a href="home.html">Home</a>
+            <a href="edit.html">Edit</a>
+        </div>
+    </div>
+
+        
+        <script src="home.js"></script>
+</body>
