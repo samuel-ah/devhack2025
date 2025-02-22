@@ -32,6 +32,8 @@ body {
     color: #bac4cf;
     /* Darker blue on hover */
 }
+
+
 .editContainer {
     display: flex;
     gap: 10px; 
@@ -55,18 +57,24 @@ body {
 }
 
 .saved-boxes {
-    display: flex; /* Flexbox to place the boxes side by side */
-    flex-wrap: wrap; /* Wraps boxes to a new row when needed */
-    gap: 15px; /* Space between saved boxes */
+    display: flex;
+    /* Flexbox to place the boxes side by side */
+    flex-wrap: wrap;
+    /* Wraps boxes to a new row when needed */
+    gap: 15px;
+    /* Space between saved boxes */
     cursor: pointer;
 }
 
 
 .saved-box-wrapper {
     display: flex;
-    flex-direction: column; /* Stack the box and the name vertically */
-    align-items: center; /* Center both the box and the name */
-    margin-right: 10px; /* Space between the boxes */
+    flex-direction: column;
+    /* Stack the box and the name vertically */
+    align-items: center;
+    /* Center both the box and the name */
+    margin-right: 10px;
+    /* Space between the boxes */
 }
 
 .saved-box {
@@ -131,6 +139,20 @@ body {
 
 .close {
     position: absolute;
+    top: 10px;
+    /* Position from the top */
+    left: 15px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: white;
+    /* Change text color to white*/
+}
+
+#userForm button {
+    margin-top: 20px;
+    /* Move the button further down */
     top: 10px;   /* Position from the top */
     left: 15px;
     cursor: pointer;
@@ -148,5 +170,3 @@ body {
     background-color: #363936; /* Change background color on hover */
     color: white; /* Change text color to white */
 }
-
-
