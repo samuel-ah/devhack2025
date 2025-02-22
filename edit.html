@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title> <!-- Sets the browser tab title -->
     <link rel="stylesheet" href="style.css">
+    <script src="flashcards.js"></script>
 </head>
 
 <body>
@@ -15,8 +16,8 @@
             <a href="edit.html">Edit</a> /
             <a href="deck.html">Deck</a>
         </div>
-        <div class="dotted-rectangle">
-            <button onclick="newFlashCard()">+ New</button>
+        <div class="flashcard-wrapper">
+
         </div>
 
         <div class="buttonwrapper">
@@ -24,4 +25,10 @@
             <button id="remove" onclick="remove()">Remove</button>
         </div>
 
+
+        <script>
+
+            loadFlashcards();
+            displayFlashcards();
+        </script>
 </body>
