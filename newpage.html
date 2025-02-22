@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashCard App</title>
+    <link rel="stylesheet" href="newpage.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Directory Navigation -->
+        <div class="directory" id="directory">
+            <a href="home.html">Home</a> /
+            <a href="edit.html">Edit</a> /
+            <span id="flashcard-name">Flashcard</span> <!-- Dynamically changed -->
+        </div>
+
+        <div class="flashcard" onclick="flipCard()">
+            <div class="card" id="flashcard">
+                <div class="front">
+                    <button class="side-button left" onclick="leftClick()">
+                        <img src="images/left.png" width="30" height="30"/>
+                    </button>
+                    <button class="side-button right" onclick="rightClick()">
+                        <img src="images/right.png" width="30" height="30"/>
+                    </button>
+                </div>
+                <div class="back">Back of Card</div>
+            </div>
+            <button id="text-to-speech" class="no-bg-button" onclick="speakText()">
+                <img src="images/txtspeech.png" alt="Text to Speech Icon" width="30" height="30"/>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Check if we passed a name via URL parameters or localStorage
+        const urlParams = new URLSearchParams(window.location.search);
+        const flashcardName = urlParams.get('name') || localStorage.getItem('flashcardName');
+
+        // Update the directory with the flashcard name
+        document.getElementById('flashcard-name').innerText = flashcardName;
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>

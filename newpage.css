@@ -152,6 +152,17 @@ body {
     /* Darker blue on hover */
 }
 
+#flashcard-name {
+    cursor: pointer; /* Adds a pointer cursor to show it's clickable */
+    color: black; /* Default color */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+#flashcard-name:hover {
+    text-decoration: underline;
+    color:#bac4cf /* Color when hovered */
+}
+
 .editContainer {
     display: flex;
     gap: 10px; 
