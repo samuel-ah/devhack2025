@@ -34,7 +34,8 @@ body {
     transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -63,7 +64,8 @@ body {
     justify-content: center;
 }
 
-#add,#remove {
+#add,
+#remove {
     margin: 10px;
     padding: 2px 20px;
     font-size: 16px;
@@ -75,7 +77,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
-#add:hover, #remove:hover {
+#add:hover,
+#remove:hover {
     background-color: rgb(164, 158, 159);
 }
 
@@ -83,9 +86,11 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    position: absolute;  /* Position relative to .flashcard */
-    top: 350px;           /* Adjust the position from the top */
-    right: 10px;   
+    position: absolute;
+    /* Position relative to .flashcard */
+    top: 350px;
+    /* Adjust the position from the top */
+    right: 10px;
 }
 
 .side-button {
@@ -95,68 +100,92 @@ body {
     position: absolute;
     font-size: 16px;
     padding: 10px 10px;
-    transition: transform 0.3s /*background-color 0.3s; /* Smooth transition */
+    transition: transform 0.3s
+        /*background-color 0.3s; /* Smooth transition */
 }
 
 .left {
-    left: -10px;        /* Position on the left side */
-    top: 50%;          /* Center it vertically */
-    transform: translateY(-50%); /* Adjust for perfect centering */
+    left: -10px;
+    /* Position on the left side */
+    top: 50%;
+    /* Center it vertically */
+    transform: translateY(-50%);
+    /* Adjust for perfect centering */
 }
 
 .right {
-    right: -10px;       /* Position on the right side */
-    top: 50%;          /* Center it vertically */
-    transform: translateY(-50%); /* Adjust for perfect centering */
+    right: -10px;
+    /* Position on the right side */
+    top: 50%;
+    /* Center it vertically */
+    transform: translateY(-50%);
+    /* Adjust for perfect centering */
 }
 
 .side-button:hover {
-    background-color: rgba(106, 102, 102, 0.1); /* Light background color on hover */
+    background-color: rgba(106, 102, 102, 0.1);
+    /* Light background color on hover */
 }
 
 .directory {
     font-size: 15px;
     margin: 10px;
     font-family: Arial, sans-serif;
-    position: absolute; /* Positions it relative to the page */
-    top: 10px; /* 10px from the top */
-    left: 10px; /* 10px from the left */
+    position: absolute;
+    /* Positions it relative to the page */
+    top: 10px;
+    /* 10px from the top */
+    left: 10px;
+    /* 10px from the left */
 }
 
 .directory a {
     text-decoration: none;
-    color: #000000; /* Blue color */
+    color: #000000;
+    /* Blue color */
     padding: 5px;
 }
 
 .directory a:hover {
     text-decoration: underline;
-    color: #bac4cf; /* Darker blue on hover */
+    color: #bac4cf;
+    /* Darker blue on hover */
 }
 
 .dotted-rectangle {
-    width: 250px; /* Adjust width */
-    height: 150px; /* Adjust height */
-    border: 2px dotted rgb(90, 88, 88); /* Creates the dotted border */
+    width: 250px;
+    /* Adjust width */
+    height: 150px;
+    /* Adjust height */
+    border: 2px dotted rgb(90, 88, 88);
+    /* Creates the dotted border */
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: absolute; /* Positions it relative to the page */
-    top: 70px; /* 10px from the top */
-    left: 30px; /* 10px from the left */
+    position: absolute;
+    /* Positions it relative to the page */
+    top: 70px;
+    /* 10px from the top */
+    left: 30px;
+    /* 10px from the left */
 }
 
 .dotted-rectangle button {
-    background: none; /* Removes background */
-    border: none; /* Removes border */
-    font-size: 15px; /* Adjust text size */
-    cursor: pointer; /* Shows pointer on hover */
-    color:  rgb(90, 88, 88); /* Keeps text visible */
+    background: none;
+    /* Removes background */
+    border: none;
+    /* Removes border */
+    font-size: 15px;
+    /* Adjust text size */
+    cursor: pointer;
+    /* Shows pointer on hover */
+    color: rgb(90, 88, 88);
+    /* Keeps text visible */
 }
 
-.dotted-rectangle button:hover{
-    color: #bac4cf; /* Darker blue on hover */
+.dotted-rectangle button:hover {
+    color: #bac4cf;
+    /* Darker blue on hover */
 }
-
