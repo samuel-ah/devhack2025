@@ -1,0 +1,172 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(149, 142, 145);
+}
+
+.directory {
+    font-size: 15px;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    /* Positions it relative to the page */
+    top: 10px;
+    /* 10px from the top */
+    left: 10px;
+    /* 10px from the left */
+}
+
+.directory a {
+    text-decoration: none;
+    color: #000000;
+    /* Blue color */
+    padding: 5px;
+}
+
+.directory a:hover {
+    text-decoration: underline;
+    color: #bac4cf;
+    /* Darker blue on hover */
+}
+
+.editContainer {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.dotted-rectangle {
+    width: 250px;
+    height: 150px;
+    border: 2px dotted rgb(90, 88, 88);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    margin-right: 20px;
+}
+
+.saved-boxes {
+    display: flex;
+    /* Flexbox to place the boxes side by side */
+    flex-wrap: wrap;
+    /* Wraps boxes to a new row when needed */
+    gap: 15px;
+    /* Space between saved boxes */
+    cursor: pointer;
+}
+
+
+.saved-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* Stack the box and the name vertically */
+    align-items: center;
+    /* Center both the box and the name */
+    margin-right: 10px;
+    /* Space between the boxes */
+}
+
+.saved-box {
+    position: relative;
+    top: 10px;
+    left: 5px;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.saved-box:hover {
+    background-color: #e3e2e2;
+    /* Change background color of the rectangle itself */
+}
+
+
+.saved-box-name {
+    margin-top: 15px;
+    /* Adds space between the box and the name */
+    font-size: 14px;
+    /* Adjust font size of the name if needed */
+}
+
+.dotted-rectangle button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(90, 88, 88);
+}
+
+.dotted-rectangle button:hover {
+    color: #bac4cf;
+    /* Darker blue on hover */
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black with opacity */
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgb(125, 120, 120);
+    margin: 15% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    width: 200px;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    /* Position from the top */
+    left: 15px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: white;
+    /* Change text color to white*/
+}
+
+#userForm button {
+    margin-top: 20px;
+    /* Move the button further down */
+    cursor: pointer;
+}
+
+#userForm button:hover {
+    background-color: #363936;
+    /* Change background color on hover */
+    color: white;
+    /* Change text color to white */
+}

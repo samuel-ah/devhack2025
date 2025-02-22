@@ -5,30 +5,35 @@
     <meta charset="UTF-8"> <!-- Uses UTF-8 encoding for proper text display -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title> <!-- Sets the browser tab title -->
-    <link rel="stylesheet" href="style.css">
-    <script src="flashcards.js"></script>
+    <link rel="stylesheet" href="edit.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="editContainer">
         <div class="directory">
-            <a href="home.html">Home</a> /
+            <a href="index.html">Home</a> /
             <a href="edit.html">Edit</a> /
-            <a href="deck.html">Deck</a>
         </div>
-        <div class="flashcard-wrapper">
-
+        <div id="savedBoxesContainer" class="saved-boxes"></div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">✖</span>
+                <form id="userForm" onsubmit="saveInput(event)">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="cards">Number of Cards:</label>
+                    <input type="number" id="cards" name="cards" required min="1"><br>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
         </div>
-
-        <div class="buttonwrapper">
-            <button id="add" onclick="add()">Add</button>
-            <button id="remove" onclick="remove()">Remove</button>
-        </div>
+    </div>
 
 
-        <script>
+    <script src="app.js"></script>
+    <script>
+        loadFolders()
 
-            loadFlashcards();
-            displayFlashcards();
-        </script>
+        displayFolders() 
+    </script>
 </body>
