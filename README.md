@@ -9,8 +9,10 @@
    - Adjustable text size
 
 Functions
-A home page
-   - 
+Home page
+1.Directory to edit and create new stacks
+2.Option to change colors and themes and fonts
+Memorising page
 1. Arrow buttons to go left and right
 2. Add button to add a new flashcard
-3. A
+3. Remove Button to remove flashcard
